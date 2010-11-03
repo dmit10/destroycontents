@@ -13,3 +13,7 @@ If you use Debian, you can simply run
 
 aptitude install libsvn-dump-perl
 
+Usage:
+
+./destroycontents.pl231 input.dump > output.dump
+
