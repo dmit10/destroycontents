@@ -6,8 +6,6 @@ use SVN::Dump;
 my $file = shift;
 my $dump = SVN::Dump->new( { file => $file } );
 
-my @chars=('a'..'z','A'..'Z','0'..'9','_');
-
 while ( my $record = $dump->next_record() ) {
 	process_record($record);
 	
@@ -44,7 +42,7 @@ sub generate_random_text {
 	
 	my $new_text = "";
 	for (my $i = 0; $i < $length; $i++) {
-		$new_text .= $chars[rand @chars];
+		$new_text .= ".";
 	}
 	
 	return $new_text;

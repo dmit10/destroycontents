@@ -1,7 +1,6 @@
 A simple script that replaces all files in some svn dump
 (except those which start with "link ", they could be symlinks) into
-files of the same sizes but with random readable contents (a-z, A-Z,
-0-9, _).
+files of the same sizes but filled with '.'.
 
 The script leaves file names and log messages as is.
 
